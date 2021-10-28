@@ -11,7 +11,7 @@ class Eksdemo < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/aaroniscode/eksdemo/releases/download/v0.0.1/eksdemo_0.0.1_Darwin_arm64.tar.gz"
-      sha256 "12dbc67227aa643c8de5516f0837a92a21eb8b8c8f33991f450eaaa48d71c94e"
+      sha256 "a9af10c9761fd5e6585d3de8f26caf92cebc91eb7859cd98de583f7db8226ae3"
 
       def install
         bin.install "eksdemo"
@@ -19,7 +19,7 @@ class Eksdemo < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/aaroniscode/eksdemo/releases/download/v0.0.1/eksdemo_0.0.1_Darwin_x86_64.tar.gz"
-      sha256 "755a12027ebda4195ac496d171d13cf246d1dc23847b1115add3f99a142a4c2d"
+      sha256 "319d790b5b2b6eb4e4f0d3746e489226467b50f364962f0bfb8f4931e8b677b4"
 
       def install
         bin.install "eksdemo"
@@ -30,7 +30,7 @@ class Eksdemo < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/aaroniscode/eksdemo/releases/download/v0.0.1/eksdemo_0.0.1_Linux_arm64.tar.gz"
-      sha256 "096d62ae98bb353c5294d5deb5df2df3d032d1fd86a1fcb852dab71aac79a50f"
+      sha256 "3621cb4b048c733cf631a70472e34289a9c53bfb5c2689c953afb3e053965a38"
 
       def install
         bin.install "eksdemo"
@@ -38,7 +38,7 @@ class Eksdemo < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/aaroniscode/eksdemo/releases/download/v0.0.1/eksdemo_0.0.1_Linux_x86_64.tar.gz"
-      sha256 "c94bc18afd776bff8aa439db7ef85397a7c230e72c119cc66313072281dd459d"
+      sha256 "b0317ac8437c6461056f99788f6be201fc2b3f9ef39ce135fea993b696fea7fb"
 
       def install
         bin.install "eksdemo"
@@ -46,5 +46,5 @@ class Eksdemo < Formula
     end
   end
 
-  depends_on "eksctl"
+  depends_on "weaveworks/tap/eksctl"
 end
