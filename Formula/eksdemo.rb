@@ -5,21 +5,21 @@
 class Eksdemo < Formula
   desc "A toolkit to quickly and easily demo EKS with opinioned application installs."
   homepage "https://github.com/aaroniscode/eksdemo"
-  version "0.0.1"
+  version "0.0.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/aaroniscode/eksdemo/releases/download/v0.0.1/eksdemo_0.0.1_Darwin_arm64.tar.gz"
-      sha256 "a9af10c9761fd5e6585d3de8f26caf92cebc91eb7859cd98de583f7db8226ae3"
+      url "https://github.com/aaroniscode/eksdemo/releases/download/v0.0.2/eksdemo_0.0.2_Darwin_arm64.tar.gz"
+      sha256 "5989f411a23efd32bea6937d466066d7e1f315f952a8d451c92d6c7b4221f12c"
 
       def install
         bin.install "eksdemo"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/aaroniscode/eksdemo/releases/download/v0.0.1/eksdemo_0.0.1_Darwin_x86_64.tar.gz"
-      sha256 "319d790b5b2b6eb4e4f0d3746e489226467b50f364962f0bfb8f4931e8b677b4"
+      url "https://github.com/aaroniscode/eksdemo/releases/download/v0.0.2/eksdemo_0.0.2_Darwin_x86_64.tar.gz"
+      sha256 "58ef69a3204a20d6227fd552ef5aa5640f647760e1effa1fbdf6943dcc143a4a"
 
       def install
         bin.install "eksdemo"
@@ -29,16 +29,16 @@ class Eksdemo < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aaroniscode/eksdemo/releases/download/v0.0.1/eksdemo_0.0.1_Linux_arm64.tar.gz"
-      sha256 "3621cb4b048c733cf631a70472e34289a9c53bfb5c2689c953afb3e053965a38"
+      url "https://github.com/aaroniscode/eksdemo/releases/download/v0.0.2/eksdemo_0.0.2_Linux_arm64.tar.gz"
+      sha256 "1645ccdf49ff5352956141d136ec20229bce5015d782f4665489e1a4b0f2e348"
 
       def install
         bin.install "eksdemo"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/aaroniscode/eksdemo/releases/download/v0.0.1/eksdemo_0.0.1_Linux_x86_64.tar.gz"
-      sha256 "b0317ac8437c6461056f99788f6be201fc2b3f9ef39ce135fea993b696fea7fb"
+      url "https://github.com/aaroniscode/eksdemo/releases/download/v0.0.2/eksdemo_0.0.2_Linux_x86_64.tar.gz"
+      sha256 "f65fc49e294587ed123cccb3b37897244ed1c16f6aaa24ba0efaee016c182b81"
 
       def install
         bin.install "eksdemo"
